@@ -3,25 +3,25 @@
 
 def inputNumbers(x):
     xyz = ["X", "Y", "Z"]
-    a = []
+    list = []
     for i in range(x):
-        a.append(input(f"Введите значение {xyz[i]}: "))
-    return a
+        list.append(input(f"Введите значение {xyz[i]}: "))
+    return list
 
 
-def checkPredicate(x):
-    left = not (x[0] or x[1] or x[2])
-    right = not x[0] and not x[1] and not x[2]
-    result = left == right
+def Predicate(x):
+    leftsite = not (x[0] or x[1] or x[2])
+    rightsite = not x[0] and not x[1] and not x[2]
+    result = leftsite == rightsite
     return result
 
 
 statement = inputNumbers(3)
 
-if checkPredicate(statement) == True:
-    print(f"Утверждение истинно")
+if Predicate(statement) == True:
+    print(f"True")
 else:
-    print(f"Утверждение ложно")
+    print(f"False")
 
 
 #not(x or y or z) == not x or not y or not z  
