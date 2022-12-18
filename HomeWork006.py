@@ -4,3 +4,12 @@
 
 # - 6782 -> 23
 # - 0,56 -> 11
+
+sum = 0
+float_number = input('Введите вещественное число: ')
+
+for s in float_number:
+    if s.isdigit():
+        sum += int(s)
+
+print(f'{float_number} -> {sum}')
