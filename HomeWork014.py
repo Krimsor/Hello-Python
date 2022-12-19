@@ -6,6 +6,5 @@
 # - 3 -> 11
 # - 2 -> 10
 
-x = int(input("Введите число: "))
-print(f'{x} -> {bin(x)[2:]}')
-
+decimal = int(input("Введите число: "))
+print(f'{decimal} -> {bin(decimal)[2:]}')
