@@ -4,10 +4,11 @@
 
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
-import numpy
+float_array = [1.1, 1.2, 3.1, 5, 10.01]
+float_array1 = []
+for i in range(len(float_array)):
+    if float_array[i] % 1 != 0:
+        float_array1.append(float_array[i])
+float_array2 = [round(float_array1[i] % 1, 2) for i in range(len(float_array1))]
 
-random_float_array = numpy.random.uniform(low=0.1, high=10.9, size=(5))
-print(random_float_array)
-
-new_lst = [round(i%1,2) for i in random_float_array if i%1 != 0]
-print(max(new_lst) - min(new_lst))
+print (f'{float_array} -> {max(float_array2) - min(float_array2)}')
