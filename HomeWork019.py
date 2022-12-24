@@ -33,5 +33,5 @@ ratios = get_ratios(k)
 polynom1 = get_polynomial(k, ratios)
 print(polynom1)
 
-with open('33_Polynomial.txt', 'w') as data:
+with open('HW019Polynomial.txt', 'w') as data:
     data.write(polynom1)
