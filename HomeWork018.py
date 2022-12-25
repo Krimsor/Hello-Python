@@ -5,4 +5,6 @@ lst = list(map(int, input("Введите числа через пробел:\n"
 print(f"Исходный список: {lst}")
 lst1 = []
 [lst1.append(i) for i in lst if i not in lst1]
-print(f"Список из неповторяющихся элементов: {lst1}")
+print(f'Список из неповторяющихся элементов: {lst1}')
+
+
