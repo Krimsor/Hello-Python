@@ -7,6 +7,6 @@ def del_some_words(my_text):
     return " ".join(my_text)
 
 my_text = del_some_words(my_text)
-print(*my_text)
+print(my_text)
 
 
