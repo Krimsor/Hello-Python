@@ -6,59 +6,58 @@
 
 # 1 list cpmprehension.
 
-print('Введите целые числа через пробел: ')
+# print('Введите целые числа через пробел: ')
 
-print(*[int(i) ** 3 for i in input().split()])  # куб числа
+# print(*[int(i) ** 3 for i in input().split()])  # куб числа
 
-# 2 map. список из неповторяющеейся элементов (задача)
+# # 2 map. список из неповторяющеейся элементов (задача)
 
-lst = [x for x in range(1, 20)]
+# lst = [x for x in range(1, 20)]
 
-lst = list(map(lambda x: x + 10, lst))
+# lst = list(map(lambda x: x + 10, lst))
 
-print(lst)
+# print(lst)
 
-# 3 lambda
-
-
-def select(fun, col):
-    return [fun(x) for x in col]
+# # 3 lambda
 
 
-def where(fun, col):
-    return [x for x in col if fun(x)]
+# def select(fun, col):
+#     return [fun(x) for x in col]
 
 
-data = '1 2 3 5 8 15 23 38'.split()
+# def where(fun, col):
+#     return [x for x in col if fun(x)]
 
-res = select(int, data)
-res = where(lambda x: not x % 2, res)  # список четных чисел
-res = select(lambda x: (x, x ** 2), res)  # кортежы - квадрат числа
-print(*res)  # * - распаковка
 
-# 4 filter
+# data = '1 2 3 5 8 15 23 38'.split()
 
-data = [x for x in range(10)]
+# res = select(int, data)
+# res = where(lambda x: not x % 2, res)  # список четных чисел
+# res = select(lambda x: (x, x ** 2), res)  # кортежы - квадрат числа
+# print(*res)  # * - распаковка
 
-res = list(filter(lambda x: not x % 2, data))
+# # 4 filter
 
-print(res)
+# data = [x for x in range(10)]
 
-# 5 zip
+# res = list(filter(lambda x: not x % 2, data))
 
-obj = ['obj1', 'obj2', 'obj3', 'obj4', 'obj5',]
-ids = [4, 5, 9, 14, 7]
-salary = [111, 222, 333]
+# print(res)
 
-data = list(zip(obj, ids, salary))
-print(data)
+# # 5 zip
+
+# obj = ['obj1', 'obj2', 'obj3', 'obj4', 'obj5',]
+# ids = [4, 5, 9, 14, 7]
+# salary = [111, 222, 333]
+
+# data = list(zip(obj, ids, salary))
+# print(data)
 
 # 6 enumerate
 
 city = ['Moscow', 'Khabarovsk', 'Vladivostok']
 
-data = list(enumerate(city))
-print(data)
+print(*list(enumerate(city)))
 
 # city = ['Moscow', 'Khabarovsk', 'Vladivostok']
 
