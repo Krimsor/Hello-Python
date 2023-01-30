@@ -1,0 +1,12 @@
+venv
+# Sublime Text 2
+*.sublime*
+
+# VS Code
+.vscode
+
+# unitests files
+game.gif
+telegram.mp3
+
+log.csv
